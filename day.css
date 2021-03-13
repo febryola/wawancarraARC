@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #fcefe0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgb(250, 252, 224), #f2f3cf); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f5e0fc, #cff2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+}
+
+.box {
+    margin: auto;
+    display: grid;
+    place-items: center;
+    width: 80vw;
+    height: 80vh;
+    background-color: #d18017;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.8);
+}
+
+.box img {
+    max-width: 720px;
+    width: 50%;
+}
+
+.box .profpic {
+    width: 200px;
+}
+
+.box .content {
+    width: 50%;
+    background-color: #750037;
+    color: #63eeee;
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.backButton button {
+    background-color: #007514;
+    color: white;
+    position: absolute;
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+    border-radius: 0px;
+}
+
+.backButton button:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    cursor: grab;
+    color: rgb(255, 255, 255);
+}
+
+.backButton button h4 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 950px) {
+    .profpic {
+        width: 120px;
+    }
+}
+
+@media (max-width: 780px) {
+    .backButton button h4 {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    h3 {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+}
+
+/* darkmode */
+.darkmode--activated .box {
+    mix-blend-mode: difference;
+    background-color: #232323;
+    box-shadow: 10px 10px 4px rgba(255, 255, 255, 0.2);
+}
+
+.darkmode--activated .box .content {
+    width: 50%;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.darkmode--activated h1 {
+    color: white;
+}
+
+.darkmode--activated .backButton button {
+    background-color: #343434;
+}
+
+.darkmode--activated .backButton button:hover {
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+    cursor: grab;
+    color: white;
+}
+
+.darkmode--activated .carousel-control-next,
+.darkmode--activated .carousel-control-prev {
+    filter: invert(100%);
+}

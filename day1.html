@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="day.css">
+    <title>Wawancara ARC Day 1</title>
+
+    <script>
+        $('.carousel').carousel({
+            interval: false
+        });
+
+        function backToIndex() {
+            window.location = './index.html';
+        }
+    </script>
+  </head>
+  <body>
+    <div class='darkmode-ignore'>
+        <div class='backButton'>
+            <button type='button' class='btn' onclick='backToIndex();'>Back</button>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-interval='false'>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class='box'>
+                        <h1>Wawancara 3 Maret 2021</h1>
+                        <img src='./assets/ARC Day 1.jpeg' alt='Foto Wawancara ARC Day 1'>
+                        <div class='content'>
+                            <h3>Kru:</h3>
+                            <h3>Steven Nataniel (IF'19)</h3>
+                        </div>
+                    </div>
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                </div>
+                <div class="carousel-item">
+                    <div class='box'>
+                        <h1>Steven Nataniel (IF'19)</h1>
+                        <img class='profpic' src="./assets/Steven Nataniel.jpeg">
+                        <div class='content'>
+                            <h3>>> Nama panggilannya Nathaniel .</h3>
+                            <h3>>> Tertarik ARC karna juga udah ngoding dari kelas 6 SD.</h3>
+                            <h3>>> cerita kalo tubes di IF serem hheheh</h3>
+                            <h3>>> waktu wawancara berbagi pengalaman tentang jurusan di IF.</h3>
+                            <h3>>> ngobrolnya asik tapi waktu wawan ga bisa oncam hehe, kakanya lg Ubuntu</h3>
+                        </div>    
+                    </div>
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        const options = {
+            bottom: '10px', // default: '32px'
+            right: '10px', // default: '32px'
+            left: 'unset', // default: 'unset'
+            time: '0s', // default: '0.3s'
+            mixColor: '#cfa997', // default: '##cfa997'
+            backgroundColor: '##cfa997',  // default: '##cfa997'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '##cfa997', // default: '##cfa997'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
+
+  </body>
+</html>
